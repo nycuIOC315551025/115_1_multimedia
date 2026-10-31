@@ -10,15 +10,23 @@
 ### 要幹嘛
 - 用經典演算法調整曝光，過曝之類的
 
-### 執行方式
+### 建立環境與執行方式
+
+先安裝 Python 3，然後在 `HW3` 資料夾執行以下指令，建立 `.venv` 並安裝 `requirements.txt` 中的套件：
 
 ```powershell
-.\.venv\Scripts\python.exe test.py
+powershell -ExecutionPolicy Bypass -File .\setup_venv.ps1
+```
+
+若 `.venv` 已存在，腳本會使用現有環境並安裝所需套件。接著執行：
+
+```powershell
+.\.venv\Scripts\python.exe main_algorithm.py
 ```
 
 程式先根據平均亮度自動選擇 Gamma 值，再對亮度通道套用 CLAHE（限制對比度自適應直方圖均衡化），改善局部對比。結果與原亮度混合，減少過度處理；輸出存入 `after_image`。可用 `--target 0.6` 改變目標亮度（預設為 0.5）。完全過曝成純白的細節無法還原。
 
-目前的 `.venv` 使用本機既有 Python 環境中的 Pillow 和 NumPy；若要在其他電腦建立環境，可以執行 `python -m venv .venv`，再執行 `.\.venv\Scripts\python.exe -m pip install Pillow numpy`。
+安裝套件需要網路連線。若要產生左右對照圖，執行 `.\.venv\Scripts\python.exe compare.py`。
 
 <!-- compare-answers-start -->
 ### 左右對照圖答案
