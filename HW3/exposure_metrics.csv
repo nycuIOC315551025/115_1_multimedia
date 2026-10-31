@@ -1,0 +1,11 @@
+﻿image,version,mean_brightness_0_255,brightness_std_0_255,dark_pixels_le_5_percent,bright_pixels_ge_250_percent
+img_013_SRF_4_HR.png,original,112.75,56.91,0.79,0.00
+img_013_SRF_4_HR.png,processed,122.99,58.35,0.67,0.00
+img_019_SRF_4_HR.png,original,102.51,75.21,13.31,0.94
+img_019_SRF_4_HR.png,processed,111.95,75.25,10.37,0.87
+img_032_SRF_4_HR.png,original,141.97,81.02,1.31,7.93
+img_032_SRF_4_HR.png,processed,138.54,78.82,1.58,6.43
+img_087_SRF_4_HR.png,original,115.41,66.52,2.28,0.48
+img_087_SRF_4_HR.png,processed,121.38,64.55,1.87,0.44
+img_090_SRF_4_HR.png,original,67.34,56.29,0.48,2.97
+img_090_SRF_4_HR.png,processed,89.71,54.20,0.02,2.96
